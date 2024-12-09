@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    background-color: rgb(16, 16, 16);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    border-bottom: solid 1px white;
+    box-sizing: border-box;
+    height: 91px;
+}
+
+.option-header {
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    font-size: large;
+    background-color: black;
+    margin: 25px 15px 25px 15px;
+    box-sizing: border-box;
+    width: 175px;
+    text-align: center;
+
+}
+
+.option-header:hover {
+    border: #0873ce solid 2px;
+    position: relative;
+    border-radius: 30% 10%;
+    box-shadow: 0 0 20px 0 #0873ce;
+}
+
+header img {
+    position: absolute;
+    right: 1060px;
+    width: 200px;
+    height: 90px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 40px;
+    background-color: black;
+    border-top: white solid 1px;
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+    color: #0873ce;
+    box-shadow: inset 0 0 20PX 0 #0873ce;
+    width: fit-content;
+    padding: 8PX;
+    border-radius: 20px;
+}
+p{
+    line-height: 25px;
+}
+.text_intro{
+    margin: 50px 300px 30px 120px;
+    padding-bottom: 20px;
+    font-size: large;
+    border-bottom: white solid 1px;
+}
+.espace-images{
+   display: grid ;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 90px 170px 90px 170px 90px 170px;
+   width: 80%;
+   align-self: center;
+   grid-gap: 0 30px;
+}
+span{
+    background-color: rgb(36, 36, 36);
+}
+.detail-nom-voiture{
+    color: gray;
+}
+.tarif{
+    color: white;
+    padding-top: 5px;
+    box-shadow: inset 0 0 20PX 0 #0873ce;
+    border-radius: 5px;
+    padding: 2PX 5px;
+}
+.box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(36, 36, 36);
+    border: #0873ce 1px solid;
+    box-shadow:0 0 5PX 0 #0873ce;
+    transition-duration: 300ms;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+img{
+    height: 100px;
+    margin-bottom: 5px;
+}
+h2{
+    grid-column: span 3;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 2rem;
+}

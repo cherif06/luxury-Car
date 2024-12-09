@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    background-color: rgb(16, 16, 16);
+}
+a{
+    background-color: black;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    border-bottom: solid 1px white;
+    box-sizing: border-box;
+    height: 91px;
+}
+
+.option-header {
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    font-size: large;
+    background-color: black;
+    margin: 25px 15px 25px 15px;
+    box-sizing: border-box;
+    width: 175px;
+    text-align: center;
+
+}
+
+.option-header:hover {
+    border: #0873ce solid 2px;
+    position: relative;
+    border-radius: 30% 10%;
+    box-shadow: 0 0 20px 0 #0873ce;
+}
+
+header img {
+    position: absolute;
+    right: 1060px;
+    width: 200px;
+    height: 90px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 40px;
+    background-color: black;
+    border-top: white solid 1px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+}
+.calculprix{
+    display: flex;
+    width: 80%;
+    border-radius: 30px;
+    padding:  10px 20px;
+    background-color: rgb(28, 28, 28);
+    box-shadow:0 0 3px 1px #0873ce,0 0 50px 10px black;
+    border: #0873ce solid 1px;
+}
+.nombre_jours{
+    width: 50%;
+    padding: 20px 40px;
+    background-color: rgb(28, 28, 28);
+}
+h1{
+    background-color: rgb(28, 28, 28);
+    margin-bottom: 30px;
+}
+.montant_total{
+    width: 50%;
+    border-left: white 1px solid;
+    padding: 20px 40px;
+    background-color: rgb(28, 28, 28);
+}
+input,#total{ 
+    background-color: rgb(28, 28, 28);
+    border: none;
+    border-bottom: solid white 1px ;
+    padding-bottom: 5px;
+    font-size: large;
+    text-align: center;
+    width: 200px;
+    font-size: x-large;
+}
+#jours:focus{
+    outline: none;
+}
+#total{
+    color: grey;
+    display: inline-block;
+}
+.devise{
+    font-size: x-large;
+    background-color: rgb(28, 28, 28);
+    margin-left: 10px;
+}

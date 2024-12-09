@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <title>Luxury car</title>
+    <script>
+        function validerformulaire(){
+            valide=true;
+            let nom=document.getElementById("nom").value.trim();
+            let prenom=document.getElementById("prenom").value.trim();
+            let civilite=document.querySelector(".civilite").value;
+            let email=document.getElementById("email").value.trim();
+            let message=document.getElementById("Message").value.trim();
+            document.getElementById("nom_erreur").textContent ="";
+            document.getElementById("prenom_erreur").textContent ="";
+            document.getElementById("civilite_erreur").textContent ="";
+            document.getElementById("email_erreur").textContent ="";
+            document.getElementById("message_erreur").textContent ="";
+            if(nom==""){
+                document.getElementById("nom_erreur").textContent="Remplir votre nom";
+                valide=false;
+            }
+            if(prenom==""){
+                document.getElementById("prenom_erreur").textContent="Remplir votre prenom";
+                valide=false;
+            }
+            if (civilite==="") {
+                document.getElementById("civilite_erreur").textContent ="Precisez votre civilité";
+                valide=false
+            }
+            if(email==""){
+                document.getElementById("email_erreur").textContent = "Remplir votre email";
+                valide = false;
+            }
+            if(message==""){
+                document.getElementById("message_erreur").textContent ="Remplir votre message";
+                valide=false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img src="image/logo.png" alt="">
+        <div class="option-header">
+            <a href="accueil.html">Accueil</a>
+        </div>
+        <div class="option-header">
+            <a href="offres.html">Offres</a>
+        </div>
+        <div class="option-header">
+            <a href="formulaire.html">Nous-contacter</a>
+        </div>
+        <div class="option-header">
+            <a href="simulation.html">Nos prix</a>
+        </div>
+    </header>
+    <main>
+        <div class="formulaire">
+            <div class="input-group"></div>
+                <h1>Contactez-Nous</h1>
+                <input type="text"  placeholder="Prenom" id="prenom"><br><span id="prenom_erreur"></span><br>
+                <input type="text"  placeholder="Nom" id="nom"><br><span id="nom_erreur"></span><br>
+                <select name="" class="civilite">
+                    <option value="" id="civilite">Civilite</option>
+                    <option value="homme">Monsieur</option>
+                    <option value="madame">Madame</option>
+                </select><br>
+                <span id="civilite_erreur"></span><br>
+                <input type="email" name="" id="email" placeholder="email"><br><span id="email_erreur"></span><br>
+                <textarea name="" id="Message" placeholder="Commentaire"></textarea><br><span id="message_erreur"></span><br>
+                <button type="submit" onclick="validerformulaire()">Envoyer</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@copyright : Cherif Bakhoum</p>
+    </footer>
+</body>
+</html>

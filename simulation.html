@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/simulation.css">
+    <title>Luxury car</title>
+    <script>
+    function calcule(){
+        let jours=document.getElementById("jours").value
+        let montant=document.getElementById("total")
+        if(jours<30){
+            montant.style.color="white"
+            document.getElementById("total").textContent =jours*25000
+            console.log(montant)
+        }
+        if(jours>30 & jours<60){
+            montant.style.color="white"
+            document.getElementById("total").textContent =jours*20000
+            console.log(montant)
+        }
+        if(jours>=60){
+            montant.style.color="white"
+            document.getElementById("total").textContent =jours*18000
+            console.log(montant)
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img src="image/logo.png" alt="">
+        <div class="option-header">
+            <a href="accueil.html">Accueil</a>
+        </div>
+        <div class="option-header">
+            <a href="offres.html">Offres</a>
+        </div>
+        <div class="option-header">
+            <a href="formulaire.html">Nous-contacter</a>
+        </div>
+        <div class="option-header">
+            <a href="simulation.html">Nos prix</a>
+        </div>
+    </header>
+    <main>
+        <div class="calculprix">
+            <div class="nombre_jours">
+                <h1>Nombre de jours</h1>
+                <input type="number" id="jours"  placeholder="jours" min="1" oninput="calcule()">
+            </div>
+            <div class="montant_total">
+                <h1>Montant total</h1>
+                <span id="total">Montant</span><span class="devise">fcfa</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>@copyright : Cherif Bakhoum</p>
+    </footer>
+</body>
+</html>
